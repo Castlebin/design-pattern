@@ -7,6 +7,6 @@ public class TestDynamicProxy {
         Student student = new Student();
         People people = (People) Proxy.newProxyInstance(student.getClass().getClassLoader(),
                 new Class[]{People.class}, new PeopleInvocationHandler(student));
-        people.sayHello();;
+        people.sayHello();
     }
 }
