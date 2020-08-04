@@ -1,4 +1,4 @@
-package com.heller.asm;
+package com.heller.asm.demo1;
 
 import java.io.IOException;
 import java.io.PrintWriter;

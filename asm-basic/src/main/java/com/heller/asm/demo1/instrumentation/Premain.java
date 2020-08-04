@@ -1,6 +1,6 @@
-package com.heller.asm.instrumentation;
+package com.heller.asm.demo1.instrumentation;
 
-import com.heller.asm.CustomClassWriter;
+import com.heller.asm.demo1.CustomClassWriter;
 
 import java.lang.instrument.ClassFileTransformer;
 import java.lang.instrument.IllegalClassFormatException;

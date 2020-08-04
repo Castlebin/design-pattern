@@ -1,4 +1,4 @@
-package com.heller.asm;
+package com.heller.asm.demo1;
 
 public class TestCustomClassWriterMain {
     public static void main(String[] args) {
