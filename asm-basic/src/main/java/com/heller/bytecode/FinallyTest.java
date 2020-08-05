@@ -1,4 +1,4 @@
-package com.heller.asm.demo2;
+package com.heller.bytecode;
 
 public class FinallyTest {
 

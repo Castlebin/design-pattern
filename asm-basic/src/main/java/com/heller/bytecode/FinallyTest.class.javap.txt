@@ -6,9 +6,9 @@ Constant pool:
    #1 = Methodref          #7.#30         // java/lang/Object."<init>":()V
    #2 = Fieldref           #31.#32        // java/lang/System.out:Ljava/io/PrintStream;
    #3 = Methodref          #33.#34        // java/io/PrintStream.println:(I)V
-   #4 = Methodref          #6.#35         // com/heller/asm/demo2/FinallyTest.test1:(I)I
-   #5 = Methodref          #6.#36         // com/heller/asm/demo2/FinallyTest.test2:(I)I
-   #6 = Class              #37            // com/heller/asm/demo2/FinallyTest
+   #4 = Methodref          #6.#35         // com/heller/bytecode/FinallyTest.test1:(I)I
+   #5 = Methodref          #6.#36         // com/heller/bytecode/FinallyTest.test2:(I)I
+   #6 = Class              #37            // com/heller/bytecode/FinallyTest
    #7 = Class              #38            // java/lang/Object
    #8 = Utf8               <init>
    #9 = Utf8               ()V
@@ -16,7 +16,7 @@ Constant pool:
   #11 = Utf8               LineNumberTable
   #12 = Utf8               LocalVariableTable
   #13 = Utf8               this
-  #14 = Utf8               Lcom/heller/asm/demo2/FinallyTest;
+  #14 = Utf8               Lcom/heller/bytecode/FinallyTest;
   #15 = Utf8               test1
   #16 = Utf8               (I)I
   #17 = Utf8               a
@@ -39,7 +39,7 @@ Constant pool:
   #34 = NameAndType        #44:#45        // println:(I)V
   #35 = NameAndType        #15:#16        // test1:(I)I
   #36 = NameAndType        #21:#16        // test2:(I)I
-  #37 = Utf8               com/heller/asm/demo2/FinallyTest
+  #37 = Utf8               com/heller/bytecode/FinallyTest
   #38 = Utf8               java/lang/Object
   #39 = Utf8               java/lang/Throwable
   #40 = Utf8               java/lang/System
@@ -61,7 +61,7 @@ Constant pool:
         line 3: 0
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-            0       5     0  this   Lcom/heller/asm/demo2/FinallyTest;
+            0       5     0  this   Lcom/heller/bytecode/FinallyTest;
 
   public static int test1(int);
     descriptor: (I)I
