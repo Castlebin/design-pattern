@@ -1,5 +1,6 @@
-package com.heller.asm.demo3;
+package com.heller.javassist;
 
+import com.heller.asm.demo3.Base;
 import javassist.*;
 
 import java.io.IOException;
