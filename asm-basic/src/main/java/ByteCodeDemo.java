@@ -8,3 +8,8 @@ public class ByteCodeDemo {
         return c;
     }
 }
+
+
+/**
+ 使用 javap -v xxx.class  即可生成对应的字节码文件
+ */
