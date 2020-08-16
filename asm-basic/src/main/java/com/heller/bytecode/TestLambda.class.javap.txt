@@ -1,13 +1,7 @@
-Last modified Aug 6, 2020; size 1412 bytes
-  MD5 checksum e436e30fd874fcc3041e86383a986dfc
-  Compiled from "TestLambda.java"
 public class com.heller.bytecode.TestLambda
   minor version: 0
   major version: 52
-  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
-  this_class: #7                          // com/heller/bytecode/TestLambda
-  super_class: #8                         // java/lang/Object
-  interfaces: 0, fields: 0, methods: 3, attributes: 3
+  flags: ACC_PUBLIC, ACC_SUPER
 Constant pool:
    #1 = Methodref          #8.#30         // java/lang/Object."<init>":()V
    #2 = InvokeDynamic      #0:#36         // #0:accept:()Ljava/util/function/Consumer;
@@ -40,9 +34,9 @@ Constant pool:
   #29 = Utf8               TestLambda.java
   #30 = NameAndType        #9:#10         // "<init>":()V
   #31 = Utf8               BootstrapMethods
-  #32 = MethodHandle       6:#46          // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #32 = MethodHandle       #6:#46         // invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
   #33 = MethodType         #47            //  (Ljava/lang/Object;)V
-  #34 = MethodHandle       6:#48          // REF_invokeStatic com/heller/bytecode/TestLambda.lambda$main$0:(Ljava/lang/String;)V
+  #34 = MethodHandle       #6:#48         // invokestatic com/heller/bytecode/TestLambda.lambda$main$0:(Ljava/lang/String;)V
   #35 = MethodType         #25            //  (Ljava/lang/String;)V
   #36 = NameAndType        #49:#50        // accept:()Ljava/util/function/Consumer;
   #37 = Utf8               testStrForLambda
@@ -80,7 +74,7 @@ Constant pool:
 {
   public com.heller.bytecode.TestLambda();
     descriptor: ()V
-    flags: (0x0001) ACC_PUBLIC
+    flags: ACC_PUBLIC
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0
@@ -94,7 +88,7 @@ Constant pool:
 
   public static void main(java.lang.String[]);
     descriptor: ([Ljava/lang/String;)V
-    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    flags: ACC_PUBLIC, ACC_STATIC
     Code:
       stack=2, locals=2, args_size=1
          0: invokedynamic #2,  0              // InvokeDynamic #0:accept:()Ljava/util/function/Consumer;
@@ -114,13 +108,29 @@ Constant pool:
       LocalVariableTypeTable:
         Start  Length  Slot  Name   Signature
             6       9     1 consumer   Ljava/util/function/Consumer<Ljava/lang/String;>;
+
+  private static void lambda$main$0(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         4: invokevirtual #6                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         7: return
+      LineNumberTable:
+        line 7: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0     s   Ljava/lang/String;
 }
 SourceFile: "TestLambda.java"
 InnerClasses:
-  public static final #63= #62 of #66;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+     public static final #63= #62 of #66; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
 BootstrapMethods:
-  0: #32 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  0: #32 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
     Method arguments:
       #33 (Ljava/lang/Object;)V
-      #34 REF_invokeStatic com/heller/bytecode/TestLambda.lambda$main$0:(Ljava/lang/String;)V
+      #34 invokestatic com/heller/bytecode/TestLambda.lambda$main$0:(Ljava/lang/String;)V
       #35 (Ljava/lang/String;)V
+
