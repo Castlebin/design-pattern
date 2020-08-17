@@ -4,6 +4,8 @@ import io.reactivex.rxjava3.core.Flowable;
 
 public class RxJavaDemo1 {
     public static void main(String[] args) {
+        Flowable.just("Hello world").subscribe(System.out::println);
+
         hello(args);
     }
 
