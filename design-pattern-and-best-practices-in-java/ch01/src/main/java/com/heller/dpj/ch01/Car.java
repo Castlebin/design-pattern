@@ -6,4 +6,9 @@ public class Car extends Vehicle {
         super(name);
     }
 
+    @Override
+    public String toString() {
+        return "Car: " + name;
+    }
+
 }
