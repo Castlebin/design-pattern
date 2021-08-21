@@ -12,6 +12,16 @@ class Car {
   toString() : String
 }
 
+class Bike {
+  toString() : String
+}
+
+class Trunk {
+  toString() : String
+}
+
 Vehicle <|-- Car
+Vehicle <|-- Bike
+Vehicle <|-- Trunk
 
 @enduml
