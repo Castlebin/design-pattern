@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+title 继承
+
+class Vehicle {
+  name
+  toString() : String
+}
+
+class Car {
+  toString() : String
+}
+
+Vehicle <|-- Car
+
+@enduml
