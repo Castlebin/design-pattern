@@ -1,0 +1,15 @@
+@startuml
+
+title 单例模式
+
+Client -> Singleton
+Singleton -> Singleton
+
+Class Singleton {
+  instance : Singleton
+
+  Singleton()
+  getInstance() : Singleton
+}
+
+@enduml
