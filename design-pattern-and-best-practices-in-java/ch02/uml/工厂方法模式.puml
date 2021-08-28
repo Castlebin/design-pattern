@@ -1,0 +1,44 @@
+@startuml
+title 工厂方法模式
+
+Interface Product {
+  show() : void
+}
+
+Class ConcreteProduct1 {}
+ConcreteProduct1 ..|> Product
+
+Class ConcreteProduct2 {}
+ConcreteProduct2 ..|> Product
+
+Class ConcreteProduct1_1 {}
+Class ConcreteProduct1_2 {}
+
+ConcreteProduct1_1 --|> ConcreteProduct1
+ConcreteProduct1_2 --|> ConcreteProduct1
+
+Class ConcreteProduct2_1 {}
+Class ConcreteProduct2_2 {}
+Class ConcreteProduct2_3 {}
+
+ConcreteProduct2_1 --|> ConcreteProduct2
+ConcreteProduct2_2 --|> ConcreteProduct2
+ConcreteProduct2_3 --|> ConcreteProduct2
+
+Interface Factory {
+  newProduct() : Product
+}
+Class ConcreteFactory1 {
+  newProduct() : ConcreteProduct1
+}
+Class ConcreteFactory2 {
+  newProduct() : ConcreteProduct2
+}
+
+ConcreteFactory1 ..|> Factory
+ConcreteFactory2 ..|> Factory
+
+ConcreteFactory1 --> ConcreteProduct1
+ConcreteFactory2 --> ConcreteProduct2
+
+@enduml
