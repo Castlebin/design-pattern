@@ -1,0 +1,23 @@
+@startuml
+title 简单工厂模式
+
+Class Client {}
+
+Class Product {}
+
+Class SimpleFactory {}
+
+Class ConcreteProduct1 {}
+Class ConcreteProduct2 {}
+
+SimpleFactory --> ConcreteProduct1 : create concrete instances
+SimpleFactory --> ConcreteProduct2 : create concrete instances
+
+ConcreteProduct1 --> Product
+ConcreteProduct2 --> Product
+
+Client --> Product : "uses"
+Client --> SimpleFactory : request a new product
+SimpleFactory --> Product : return a product
+
+@enduml
