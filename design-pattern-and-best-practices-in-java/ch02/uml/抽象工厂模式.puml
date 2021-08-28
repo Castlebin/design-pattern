@@ -1,0 +1,36 @@
+@startuml
+title 抽象工厂模式
+
+Interface ProductA {
+  show() : void
+}
+Interface ProductB {
+  use() : void
+}
+
+Class ConcreteProductA {}
+ConcreteProductA ..|> ProductA
+
+Class ConcreteProductB {}
+ConcreteProductB ..|> ProductB
+
+abstract Class AbstractFactory {
+  newProductA() : ProductA
+  newProductB() : ProductB
+}
+Class ConcreteFactory1 {
+  newProductA() : ProductA
+  newProductB() : ProductB
+}
+Class ConcreteFactory2 {
+  newProductA() : ProductA
+  newProductB() : ProductB
+}
+
+ConcreteFactory1 --|> AbstractFactory
+ConcreteFactory2 --|> AbstractFactory
+
+ConcreteFactory1 --> ConcreteProductA
+ConcreteFactory2 --> ConcreteProductB
+
+@enduml
