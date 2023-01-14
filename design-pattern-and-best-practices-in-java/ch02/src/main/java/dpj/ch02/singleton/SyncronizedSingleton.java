@@ -1,4 +1,4 @@
-package com.heller.dpj.ch02.singleton;
+package dpj.ch02.singleton;
 
 /**
  * 使用同步锁的单例模式（避免了多线程下，创建多个对象的可能性）
