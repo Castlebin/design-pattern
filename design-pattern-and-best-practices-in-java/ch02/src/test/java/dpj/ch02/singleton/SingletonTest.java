@@ -1,4 +1,4 @@
-package com.heller.dpj.ch02.singleton;
+package dpj.ch02.singleton;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
@@ -12,6 +12,7 @@ class SingletonTest {
     @Test
     void getInstance() {
         assertSingleton(SimpleSingleton::getInstance);
+        assertSingleton(SynchronizedSingleton::getInstance);
         assertSingleton(LockFreeSingleton::getInstance);
         assertSingleton(DoubleCheckSingleton::getInstance);
 

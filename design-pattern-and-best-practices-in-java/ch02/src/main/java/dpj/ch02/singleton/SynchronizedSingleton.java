@@ -5,13 +5,13 @@ package dpj.ch02.singleton;
  *
  * 由于每次 getInstance 都会加锁，并发效率低
  */
-public class SyncronizedSingleton {
+public class SynchronizedSingleton {
 
-    private static SyncronizedSingleton instance;
+    private static SynchronizedSingleton instance;
 
-    public synchronized SyncronizedSingleton getInstance() {
+    public static synchronized SynchronizedSingleton getInstance() {
         if (instance == null) {
-            instance = new SyncronizedSingleton();
+            instance = new SynchronizedSingleton();
         }
         return instance;
     }
