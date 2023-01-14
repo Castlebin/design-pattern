@@ -1,10 +1,10 @@
-package dpj.ch02.simpleFactory.reflect;
+package dpj.ch02.factory.simpleFactory.reflect;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 使用反射机制进行类注册的简单工厂模式
+ * 使用反射机制进行类注册的简单工厂模式（这个实现还有一点点问题没有补全，没有说什么地方去调用 registerVehicle）
  */
 public class VehicleFactory {
     private static Map<String, Class<? extends Vehicle>> registeredProducts = new HashMap<>();
