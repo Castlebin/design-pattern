@@ -1,7 +1,7 @@
 package com.heller.dpj.ch02.singleton;
 
 /**
- * 最简单的一种单例
+ * 最简单的一种单例（多线程下，两个线程同时调用getInstance，有重复创建对象实例的可能性）
  */
 public class SimpleSingleton {
     private static SimpleSingleton instance;
