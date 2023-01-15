@@ -6,7 +6,7 @@ package dpj.ch02.singleton;
  * 只有在可能创建对象时，才会加锁。避免了无脑加锁的效率问题
  */
 public class DoubleCheckSingleton {
-    private static DoubleCheckSingleton instance;
+    private static volatile DoubleCheckSingleton instance;
 
     private DoubleCheckSingleton() {}
 
