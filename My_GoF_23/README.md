@@ -42,7 +42,6 @@ Design Patterns implemented in Java
 
 
 ## 参考资料
-1. Java设计模式：23种设计模式全面解析：http://c.biancheng.net/design_pattern/
-    
-    图文并茂，还可以
+1. Java设计模式：http://c.biancheng.net/design_pattern/
+2. 
     
