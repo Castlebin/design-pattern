@@ -1,0 +1,12 @@
+@startuml
+
+class Singleton {
+    - private static Singleton instance;
+
+    + public static Singleton getInstance();
+}
+
+Singleton <-- Singleton
+
+
+@enduml

@@ -7,14 +7,14 @@
     <description>Java设计模式(GoF_23)</description>
 
     <groupId>com.heller</groupId>
-    <artifactId>gof23</artifactId>
+    <artifactId>My_GoF_23</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>1. Creational Patterns</module>
-        <module>2. Structural Patterns</module>
-        <module>3. Behavioral Patterns</module>
+        <module>1_Creational Patterns</module>
+        <module>2_Structural Patterns</module>
+        <module>3_Behavioral Patterns</module>
     </modules>
 
     <properties>
@@ -27,8 +27,8 @@
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
 
-        <junit-bom.version>5.7.2</junit-bom.version>
-        <lombok.version>1.18.24</lombok.version>
+        <junit-bom.version>5.13.1</junit-bom.version>
+        <lombok.version>1.18.38</lombok.version>
     </properties>
 
     <dependencyManagement>

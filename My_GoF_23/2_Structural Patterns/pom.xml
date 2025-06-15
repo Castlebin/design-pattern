@@ -6,11 +6,13 @@
 
     <parent>
         <groupId>com.heller</groupId>
-        <artifactId>gof23</artifactId>
+        <artifactId>My_GoF_23</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <description>2. 结构型（Structural Patterns）</description>
     <artifactId>Structural_Patterns</artifactId>
+    <packaging>pom</packaging>
 
 </project>

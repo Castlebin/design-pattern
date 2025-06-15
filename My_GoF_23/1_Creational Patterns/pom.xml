@@ -6,11 +6,13 @@
 
     <parent>
         <groupId>com.heller</groupId>
-        <artifactId>gof23</artifactId>
+        <artifactId>My_GoF_23</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <description>1. 创建型（Creational Patterns）</description>
     <artifactId>Creational_Patterns</artifactId>
+    <packaging>pom</packaging>
 
 </project>
